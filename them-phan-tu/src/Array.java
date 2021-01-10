@@ -13,19 +13,22 @@ public class Array {
             System.out.println("Nhập vị trí muốn chèn:");
             index = sc.nextInt();
             if (index <= 1 || index >= arr.length - 1) {
-                System.out.println("Không thể chèn vào mảng. Mời nhập lại vị trí.");
+                System.out.println("Không thể chèn vào mảng." + "\n" + "Mời nhập lại vị trí." + "\n" + "Điều kiện: 1 <= vị trí <= " + arr.length);
+            } else {
+                break;
             }
-            break;
         }
+
+
         int[] newArray = new int[arr.length + 1];
         for (int i = 0; i < index; i++) {
-            newArray[i]=arr[i];
+            newArray[i] = arr[i];
         }
-        newArray[index]=x;
-        for (int i = index+1; i < newArray.length; i++) {
-            newArray[i]=arr[i-1];
+        newArray[index] = x;
+        for (int i = index + 1; i < newArray.length; i++) {
+            newArray[i] = arr[i - 1];
         }
-        System.out.println("Mảng sau khi chèn "+x+" vào vị trí "+index+" là: ");
+        System.out.println("Mảng sau khi chèn " + x + " vào vị trí " + index + " là: ");
         System.out.println(Arrays.toString(newArray));
     }
 }
