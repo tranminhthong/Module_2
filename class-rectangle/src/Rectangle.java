@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Rectangle {
     double width, height;
 
@@ -19,8 +17,7 @@ public class Rectangle {
         return (this.width + this.height) * 2;
     }
 
-    public String display(){
-        return "Rectangle{"+"width= "+width+", height= "+height+"}";
+    public String display() {
+        return "Rectangle{" + "width= " + width + ", height= " + height + "}";
     }
 }
-
