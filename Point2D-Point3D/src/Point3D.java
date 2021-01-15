@@ -27,6 +27,7 @@ public class Point3D extends Point2D {
         setX(x);
         setY(y);
         setZ(z);
+
     }
 
     public float[] getXYZ() {
