@@ -20,7 +20,7 @@ public class IncreaseString {
             list.clear();
         }
         for (Character ch:max){
-            System.out.println(ch);
+            System.out.print(ch);
         }
     }
 }
