@@ -15,10 +15,10 @@ public class NewsTest {
             scanner.close();
             content = content.replaceAll("\\n","");
             content = content.replaceAll("&nbsp;","");
-            Pattern pattern = Pattern.compile("\"\\stitle=\"(.*)\">(.*)</a>");
+            Pattern pattern = Pattern.compile("\"Cate_TheGioi\\|MainList(.*)\"\\stitle=\"(.*)\">(.*)</a>");
             Matcher matcher = pattern.matcher(content);
             while (matcher.find()){
-                System.out.println(matcher.group(2));
+                System.out.println(matcher.group(3));
             }
         } catch (IOException e) {
             e.printStackTrace();
